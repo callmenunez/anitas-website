@@ -27,6 +27,7 @@ header {
     }
     li {
       text-align: right;
+      // min-width: 180px;
       &:hover {
         > ul {
           display: block;
@@ -38,14 +39,15 @@ header {
       a {
         color: rgba(75,176,161, 1);
         display: block;
-        padding: 0px 40px;
+        padding: 0px 20px;
         text-decoration: none;
         line-height: 60px;
+        width: inherit;
       }
     }
   }
 }
-main {
+html {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
