@@ -1,1 +1,1 @@
-"use strict";console.log("its working, yay"),console.log("another test?"),console.log("what about now");
+"use strict";console.log("its working, yay"),console.log("another test?"),console.log("what about now");var elem=document.querySelector(".grid"),msnry=new Masonry(elem,{itemSelector:".grid-item",columnWidth:200});msnry=new Masonry(".grid",{itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});
