@@ -1,1 +1,1 @@
-"use strict";console.log("its working, yay");var elem=document.querySelector(".grid"),msnry=new Masonry(elem,{itemSelector:".grid-item",columnWidth:200});msnry=new Masonry(".grid",{itemSelector:".grid-item",columnWidth:".grid-sizer",percentPosition:!0});
+"use strict";console.log("its working, yay");var elem=document.querySelector(".grid"),$grid=$(".grid").masonry({itemSelector:".grid-item",columnWidth:".grid-sizer",gutter:".gutter-sizer",percentPosition:!0});$grid.imagesLoaded().progress(function(){$grid.masonry("layout")});
