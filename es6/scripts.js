@@ -14,9 +14,10 @@ $grid.imagesLoaded().progress( function() {
 });  
 
 VanillaTilt.init(document.querySelector(".tilting-logo"), {
-  max: 10,
-  speed: 400
+  max: 35,
+  speed: 800,
 });
+console.log("this is here");
 
 // function toggle(){
 //   var off=document.getElementById('splash');
