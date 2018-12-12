@@ -53,7 +53,7 @@ header {
     }
   }
 }
-#splash {
+section.hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   z-index: 9999;
@@ -66,13 +66,11 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-    // flex-direction: column;
     align-content: center;
     justify-content: center;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .5));
     svg {
-      // max-width: 50%;
       width: 100%;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, .25));
     }
     ul {
       max-width: 50%;
@@ -89,14 +87,16 @@ header {
         font-weight: 700;
         background-color: #fff;
         margin-top: 10px;
-        padding: 10px;
       }
       li {
-        // color: #fff;
         font-weight: 700;
         font-size: 1vw;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, .25));
         letter-spacing: 10px;
+        display: inline-flex;
+        a {
+          padding: 20px;
+        }
       }
     }
   }

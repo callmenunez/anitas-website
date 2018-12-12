@@ -14,10 +14,18 @@ $grid.imagesLoaded().progress( function() {
 });  
 
 VanillaTilt.init(document.querySelector(".tilting-logo"), {
-  max: 35,
+  max: 10,
   speed: 800,
 });
-console.log("this is here");
+
+lightbox.option({
+  'resizeDuration': 500,
+  'wrapAround': true, 
+  'disableScrolling': true,
+  'fitImagesInViewport': true,
+  'showImageNumberLabel': false,
+  'alwaysShowNavOnTouchDevices': true
+})
 
 // function toggle(){
 //   var off=document.getElementById('splash');

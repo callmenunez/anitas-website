@@ -52,6 +52,18 @@ gulp.task('browserSync', function () {
     });
 });
 
+// Gulp task to minify JavaScript files
+gulp.task('scripts', function() {
+    return gulp.src('./es6/*.js')
+    // Minify the file
+    .pipe(uglify())
+    // Output
+    .pipe(gulp.dest('./js'))
+    .pipe(browserSync.reload({
+        stream: true
+    }))
+});
+
 gulp.task('watch', ['browserSync', 'sass'], function() {
     gulp.watch('./scss/*.scss', ['sass']);
     gulp.watch('**/*.php').on('change', function () {
@@ -60,12 +72,12 @@ gulp.task('watch', ['browserSync', 'sass'], function() {
 });
 
 // Gulp task to minify JavaScript files
-gulp.task('scripts', function() {
-    return gulp.src('./es6/*.js')
-    // Minify the file
-    .pipe(uglify())
-    // Output
-    .pipe(gulp.dest('./js'))
-});
+// gulp.task('scripts', function() {
+//     return gulp.src('./es6/*.js')
+//     // Minify the file
+//     .pipe(uglify())
+//     // Output
+//     .pipe(gulp.dest('./js'))
+// });
 
-gulp.task('default', ['browserSync', 'sass','scripts', 'watch']);
+gulp.task('default', ['scripts', 'watch']);
