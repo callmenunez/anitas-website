@@ -141,7 +141,6 @@ html.lb-disable-scrolling {
 .lb-dataContainer {
   display: none;
   margin: 0 auto;
-  /* padding-top: 5px; */
   *zoom: 1;
   width: 100%;
   border-bottom-left-radius: 4px;
